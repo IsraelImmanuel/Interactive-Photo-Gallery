@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project 5 Image Gallery</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+       <h1><label for="gallery-search">Photo Gallery</label></h1>
+       <input type="text" name="gallery-search-text" id="gallery-search" placeholder="Search..." >
+   </header>
+<main>
+  <div class="gallery grid">
+            <a href="photos/01.jpg" data-caption="Stroll through the famlands of Montana.">
+                <img src="photos/thumbnails/01.jpg" alt="Montana">
+            </a>
+            <a href="photos/02.jpg" data-caption="Lake Tahoe is an underrated gem in California.">
+                <img src="photos/thumbnails/02.jpg" alt="Lake Tahoe">
+            </a>
+            <a href="photos/03.jpg" data-caption="Warm and distinct mountain ranges cover the National Park of Zion">
+                <img src="photos/thumbnails/03.jpg" alt="Zion National Park">
+            </a>
+            <a href="photos/04.jpg" data-caption="Only a fraction of the true size of an iceberg from above.">
+                <img src="photos/thumbnails/04.jpg" alt="Iceland">
+            </a>
+            <a href="photos/05.jpg" data-caption="Where only the cold-blooded survive.">
+                <img src="photos/thumbnails/05.jpg" alt="Mojave Desert">
+            </a>
+            <a href="photos/06.jpg" data-caption="Fall is here if the leaves says so.">
+                <img src="photos/thumbnails/06.jpg" alt="Sweden">
+            </a>
+            <a href="photos/07.jpg" data-caption="The grass ain't greener on the otherside.">
+                <img src="photos/thumbnails/07.jpg" alt="China farmlands">
+            </a>
+            <a href="photos/08.jpg" data-caption="Dunes, divers, and drives.">
+                <img src="photos/thumbnails/08.jpg" alt="Pismo Beach">
+            </a>
+            <a href="photos/09.jpg" data-caption="Sweater Weather">
+                <img src="photos/thumbnails/09.jpg" alt="Seattle">
+            </a>
+            <a href="photos/10.jpg" data-caption="Golden Coast">
+                <img src="photos/thumbnails/10.jpg" alt="San Diego">
+            </a>
+            <a href="photos/11.jpg" data-caption="Cavemen">
+                <img src="photos/thumbnails/11.jpg" alt="Grand Canyon">
+            </a>
+            <a href="photos/12.jpg" data-caption="America's #1 national park.">
+                <img src="photos/thumbnails/12.jpg" alt="Yellowstone National Park">
+            </a>
+        </div>
+        <script>
+        window.addEventListener('load', function() {
+          baguetteBox.run('.gallery');
+        });
+        </script>
+</main>
+  <footer>
+  </footer>
+  <script src="js/baguetteBox.min.js"></script>​
+</body>
+</html>
